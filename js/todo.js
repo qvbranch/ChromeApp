@@ -26,8 +26,8 @@ function paintToDo(newToDo){
     const button = document.createElement("button");
     button.innerText = "😊";
     button.addEventListener("click", deleteToDo);
-    li.appendChild(span); // li안에 span 넣기
     li.appendChild(button); // li안에 button 넣기
+    li.appendChild(span); // li안에 span 넣기
     toDoList.appendChild(li);
 }
 
