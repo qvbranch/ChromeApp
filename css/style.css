@@ -35,47 +35,72 @@ input[type=text] {
     width: 100%;
     margin-top: 2.5em;
     text-align: center;
+    text-shadow: 2px 2px #aea9c7;
 }
 
 #login-form {
     position: absolute;
     z-index: 3;
     width: 100%;
-    margin-top: 20em;
+    margin-top: 24em;
     text-align: center;
 }
 
-#login-form button{
+#login-form button {
     display: none;
+}
+
+#login-form input {
+    text-align: center;
+    color: white;
+    font-size: 15px;
 }
 
 #greeting {
     position: absolute;
     z-index: 4;
     width: 100%;
-    margin-top: 10em;
+    margin-top: 11.5em;
     text-align: center;
+    color:rgb(163, 185, 218);
 }
 
 #todo-form {
     position: absolute;
     z-index: 6;
     width: 100%;
-    margin-top: 23em;
+    margin-top: 28em;
     text-align: center;
+}
+
+#todo-form input{
+    text-align: center;
+    color: white;
+    font-size: 15px;
 }
 
 #todo-list {
     position: absolute;
     z-index: 7;
-    margin-top: 26em;
+    margin-top: 32em;
     padding: 0 0 0 48%;
     text-align: left;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white;
+    opacity: 1; /* Firefox */
+    text-align: center;
 }
 
 #todo-list li {
     z-index: 8;
     list-style: none;
+    font-weight: bold;
+}
+
+#todo-list li span {
+    color:rgb(163, 185, 218);
 }
 
 #quote {
@@ -91,5 +116,5 @@ input[type=text] {
     position: absolute;
     z-index: 10;
     padding: 5% 0 0 5%; /*상 우 하 좌 순서*/
+    text-decoration: overline;
 }
-
