@@ -9,23 +9,28 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <!--아이콘-->
+    <link rel="shortcut icon" href="img/to-do-list.png" type="image/x-icon">
     
-    <title>Vanilla JS</title>
+    <title>TO DO LIST</title>
 </head>
 <body>
-        <h2 id="clock">00:00</h2>
-        <form id="login-form" class="hidden">
-            <input 
-            required
-            maxlength="15"
-            type="text" placeholder="Type your name here" />
-            <button>Log In</button>
-        </form>
-        <h1 id="greeting" class="hidden"></h1>
-        <form id="todo-form">
-            <input type="text" placeholder="Write a To Do here" required />
-        </form>
-        <ul id="todo-list"></ul>
+    <h2 id="clock">00:00</h2>
+    <form id="login-form" class="hidden">
+        <input 
+        required
+        maxlength="15"
+        type="text" 
+        style="background-color: rgba(255, 217, 0, 0);"
+        placeholder="Type your name here" />
+        <button>Log In</button>
+    </form>
+    <h1 id="greeting" class="hidden"></h1>
+    <form id="todo-form">
+        <input required type="text" placeholder="Write a To Do here"
+        style="background-color: rgba(255, 217, 0, 0);" />
+    </form>
+    <ul id="todo-list"></ul>
     <div id="quote">
         <span></span>
         <span></span>
