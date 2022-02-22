@@ -115,6 +115,13 @@ input[type=text] {
 #weather {
     position: absolute;
     z-index: 10;
-    padding: 5% 0 0 5%; /*상 우 하 좌 순서*/
-    text-decoration: overline;
+    padding: 0 0 0 5%; /*상 우 하 좌 순서*/
+    /* text-decoration: overline; */
+}
+
+.classIcon {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:2em;
 }
