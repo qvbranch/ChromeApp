@@ -46,8 +46,35 @@ input[type=text] {
     text-align: center;
 }
 
+/*로그인 버튼 아이콘 바탕 투명하게*/
 #login-form button {
-    display: none;
+    /* display: none; */
+    border: none;
+    background-color: var(--transparent-color);
+    font-size: 25px;
+    color: var(--white);
+}
+
+/* 애니메이션 효과 */
+@keyframes heartBeat {
+    0%{
+        color: var(--white);
+        transform: none;
+    }
+    50%{
+        color: rgb(252, 178, 178);
+        transform: scale(1.3);
+    }
+    100%{
+        color: var(--white);
+        transform: none;
+    }
+}
+
+/*로그인 버튼 마우스 오버 애니메이션*/
+#login-form button:hover{
+    will-change: transform;
+    animation: heartBeat 1s linear infinite;
 }
 
 #login-form input {
@@ -56,13 +83,37 @@ input[type=text] {
     font-size: 15px;
 }
 
-#greeting {
+#greetingBox {
     position: absolute;
     z-index: 4;
     width: 100%;
+    margin-top: 24em;
+    text-align: center;
+}
+
+#greeting {
+    /* position: absolute;
+    z-index: 5;
+    width: 100%;
     margin-top: 11.5em;
     text-align: center;
-    color:rgb(163, 185, 218);
+    color:rgb(163, 185, 218); */
+    font-size: 25px;
+    color: var(--white);
+    display: inline; /* */
+}
+
+/*  */
+#greetingBox button {
+    border: none;
+    background-color: var(--transparent-color);
+    font-size: 25px;
+    color: var(--white);
+}
+
+#greetingBox button:hover {
+    will-change: transform;
+    animation: heartBeat 1s linear infinite;
 }
 
 #todo-form {
@@ -123,5 +174,5 @@ input[type=text] {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width:2em;
+    width: 2em;
 }
