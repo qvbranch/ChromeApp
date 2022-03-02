@@ -28,26 +28,3 @@ if (savedUsername === null){
     // show the greetings
     paintGreetings(savedUsername);
 }
-
-
-
-/*
-const colors = ["#f4895f", "#2E8CD5", "#914ead", "#eebc12"];
-const hi = document.querySelector("div.hello h1");
-hi.style.color="white";
-
-function handleWindowResize() {
-    const width = window.innerWidth;
-    if(width < 200){
-        document.body.style.backgroundColor = colors[0];
-    } else if (width >= 200 && width < 700) {
-        document.body.style.backgroundColor = colors[1];
-    } else if (width >= 700 && width < 900) {
-        document.body.style.backgroundColor = colors[2];
-    } else if (width >= 900 && width < 1000) {
-        document.body.style.backgroundColor = colors[3];
-    }
-}
-
-window.addEventListener("resize", handleWindowResize);
-*/
