@@ -1,0 +1,37 @@
+#todo-form {
+    position: absolute;
+    z-index: 6;
+    width: 100%;
+    margin-top: 28em;
+    text-align: center;
+}
+
+#todo-form input{
+    text-align: center;
+    color: white;
+    font-size: 15px;
+}
+
+#todo-list {
+    position: absolute;
+    z-index: 7;
+    margin-top: 32em;
+    padding: 0 0 0 48%;
+    text-align: left;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white;
+    opacity: 1; /* Firefox */
+    text-align: center;
+}
+
+#todo-list li {
+    z-index: 8;
+    list-style: none;
+    font-weight: bold;
+}
+
+#todo-list li span {
+    color:rgb(163, 185, 218);
+}

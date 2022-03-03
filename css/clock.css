@@ -1,0 +1,10 @@
+#clock {
+    font-family: 'Lobster', cursive;
+    position: absolute;
+    z-index: 2;
+    font-size: 5em;
+    width: 100%;
+    margin-top: 2.5em;
+    text-align: center;
+    text-shadow: 2px 2px #aea9c7;
+}
