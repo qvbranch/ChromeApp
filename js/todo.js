@@ -26,8 +26,17 @@ function paintToDo(newToDo){
     const button = document.createElement("button");
     button.innerText = "😊";
     button.addEventListener("click", deleteToDo);
-    li.appendChild(button); // li안에 button 넣기
+
+    const input = document.createElement('input');
+    input.type = "checkbox";
+    input.id = newToDo.text;
+    input.name = newToDo.text;
+    
+    input.addEventListener('click', handleCheck);
+
+    li.appendChild(input);
     li.appendChild(span); // li안에 span 넣기
+    li.appendChild(button); // li안에 button 넣기
     toDoList.appendChild(li);
 }
 
@@ -42,6 +51,21 @@ function handleToDoSubmit(event){
     toDos.push(newTodoObj);
     paintToDo(newTodoObj);
     saveToDos();
+}
+
+function handleCheck(event){
+    const input_checkbox = event.target;
+    const spanText = input_checkbox.nextSibling; //.nextSibling : event의 타겟이 되는 input 태그와 같은 부모의 다음 형제
+
+    //체크 되어있을 때
+    if(input_checkbox.checked === true){
+        //리스트에 선 긋기
+        spanText.className = "line-through";
+    } else{
+        //체크 되어있지 않을 때 체크 지우고 그어진 선 지우기
+        input_checkbox.removeAttribute('checked');
+        spanText.className = '';
+    }
 }
 
 toDoForm.addEventListener("submit", handleToDoSubmit);
