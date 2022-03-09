@@ -16,29 +16,31 @@
     <title>TO DO LIST</title>
 </head>
 <body>
-    <h2 id="clock">00:00</h2>
-    <div id="loginBox">
-        <form id="login-form" class="non-hidden">
-            <input class="non-hidden" required maxlength="15" type="text" style="background-color: rgba(255, 217, 0, 0);" 
-            placeholder="Type your name here" />
-            <button class="non-hidden"><i class="fas fa-toggle-off"></i></button>
-        </form>
-        <div id="greetingBox" class="hidden">
-            <h1 id="greeting" class="hidden"></h1>
-            <button class="hidden"><i class="fas fa-toggle-on"></i></button>
+    <div class="container">
+        <h2 id="clock">00:00</h2>
+        <div id="loginBox">
+            <form id="login-form" class="non-hidden">
+                <input class="non-hidden" required maxlength="15" type="text" style="background-color: rgba(255, 217, 0, 0);" 
+                placeholder="Type your name here" />
+                <button class="non-hidden"><i class="fas fa-toggle-off"></i></button>
+            </form>
+            <div id="greetingBox" class="hidden">
+                <h1 id="greeting" class="hidden"></h1>
+                <button class="hidden"><i class="fas fa-toggle-on"></i></button>
+            </div>
         </div>
-    </div>
-    <form id="todo-form">
-        <input required type="text" placeholder="Write a To Do here" style="background-color: rgba(255, 217, 0, 0);" />
-    </form>
-    <ul id="todo-list"></ul>
-    <div id="quote">
-        <span></span>
-        <span></span>
-    </div>
-    <div id="weather">
-        <span></span>
-        <span></span>
+        <form id="todo-form">
+            <input required type="text" placeholder="Write a To Do here" style="background-color: rgba(255, 217, 0, 0);" />
+        </form>
+        <ul id="todo-list"></ul>
+        <div id="quote">
+            <span></span>
+            <span></span>
+        </div>
+        <div id="weather">
+            <span></span>
+            <span></span>
+        </div>
     </div>
     <div id="imgDiv"></div>
     <script src="js/greetings.js"></script>
