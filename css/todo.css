@@ -33,5 +33,10 @@
 }
 
 #todo-list li span {
-    color:rgb(163, 185, 218);
+    /* color:rgb(163, 185, 218); */
+    color: green;
+}
+
+.line-through {
+    text-decoration-line: line-through;
 }

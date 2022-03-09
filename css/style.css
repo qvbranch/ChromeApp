@@ -22,9 +22,16 @@ html, body {
 
 input[type=text] {
     border: none;
-    border-bottom: 4mm ridge rgba(50, 172, 220, 0.6);
+    border-bottom: 3mm ridge rgba(50, 172, 220, 0.6);
     outline: none;
 }
+
+/* 로그인 input 길이 */
+/*
+#login-form input[type=text] {
+    width: 15em;
+}
+*/
 
 #imgDiv img{
     position: relative;
